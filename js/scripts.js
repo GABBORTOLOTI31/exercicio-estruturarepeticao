@@ -7,10 +7,11 @@ function exesatisfacao() {
     let satisfeitos = 0
 
 
-    while (conta <= 6 ){
-        nota= Number(prompt(`informe a nota ${conta}`))
-        conta++ // conta = conta + 1 
-        soma = soma + nota
+    while (conta <= 10 ){
+
+        nota= Number(prompt(`informe a nota de 0 a 10 do aluno: ${conta}`))
+        
+        soma += nota
 
     if (nota >= 8) {  // se nota for maior/igual 8
 
