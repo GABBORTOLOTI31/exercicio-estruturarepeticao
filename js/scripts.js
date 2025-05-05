@@ -11,7 +11,7 @@ function exesatisfacao() {
 
         nota= Number(prompt(`informe a nota de 0 a 10 do aluno: ${conta}`)) // prompt = é usada para exibir uma caixa de diálogo no navegador que solicita ao usuário que insira algum texto - tipo "escreva" em portugol --- conta = "leia" em portugol
         
-        soma += nota
+        soma += nota // soma = soma + nota -- tem a função de acumular todas as notas que são informadas
 
     if (nota >= 8) {  // se nota for maior/igual 8
 
@@ -36,4 +36,6 @@ function exesatisfacao() {
     alert(`Total de pessoas satisfeitas : ${satisfeitos}`) 
     alert(`Total de pessoas insatisfeitas : ${insatisfeitos}`)
 }
+
+ // se fizer um alert(conta) vai aparecer 11 (todos numeros q se pediu, +1)
     
