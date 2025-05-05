@@ -9,7 +9,7 @@ function exesatisfacao() {
 
     while (conta <= 10 ){
 
-        nota= Number(prompt(`informe a nota de 0 a 10 do aluno: ${conta}`))
+        nota= Number(prompt(`informe a nota de 0 a 10 do aluno: ${conta}`)) // prompt = é usada para exibir uma caixa de diálogo no navegador que solicita ao usuário que insira algum texto - tipo "escreva" em portugol --- conta = "leia" em portugol
         
         soma += nota
 
