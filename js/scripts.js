@@ -1,41 +1,24 @@
-function exesatisfacao() {
+function exe0(){
 
-    let nota // guarda notas
-    let conta = 1 // conta de um a seis
+    let nota // guarda as notas
+    let conta = 1 // conta de 1 a 6
     let soma = 0
-    let insatisfeitos = 0
-    let satisfeitos = 0
-
-
-    while (conta <= 10 ){
-
-        nota= Number(prompt(`informe a nota de 0 a 10 do aluno: ${conta}`)) // prompt = é usada para exibir uma caixa de diálogo no navegador que solicita ao usuário que insira algum texto - tipo "escreva" em portugol --- conta = "leia" em portugol
+    while (conta <= 6) {
+        nota = Number(prompt(`Informe a nota ${conta}`))
+        soma = soma + nota
+        conta++ // conta = conta + 1
+    } if (nota =>8) {
         
-        soma += nota // soma = soma + nota -- tem a função de acumular todas as notas que são informadas
-
-    if (nota >= 8) {  // se nota for maior/igual 8
-
-        satisfeito++  // = satisfeito +1
-    } 
-    else if  (nota <= 5) { // = senao se 
-
-        insatisfeitos++ // = insatisfeito +1
     }
-        conta++  // = conta + 1 
-
-    }
-   
 
 
-    //soma das notas
-
-    //let soma = nota1 + nota2 + nota3 + nota4 + nota5 + nota6
-    let media = soma / 10 
-
-    alert(`A media das notas ${media.toFixed(1)}`)
-    alert(`Total de pessoas satisfeitas : ${satisfeitos}`) 
-    alert(`Total de pessoas insatisfeitas : ${insatisfeitos}`)
-}
-
- // se fizer um alert(conta) vai aparecer 11 (todos numeros q se pediu, +1)
+    // soma as notas
+    // let soma = nota1 + nota2 + nota3 + nota4 + nota5 + nota6
+    let media = soma / 6
     
+    // mostra o resultado
+
+    alert(`A média das notas é ${media.toFixed(1)}`)
+
+
+}
